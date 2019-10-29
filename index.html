@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Davie's Burgers">
+    <meta name="keywords" content="davie burger, davie's burgers, burgers">
+    <meta name="author" content="Cuk Danijela">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Davie's Burgers</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/hover-min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,500,700|Oswald:300,400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://use.fontawesome.com/a24698c221.js"></script>
+
+
 </head>
 
 <body>
     <!-- Navigation Section -->
 
     <nav>
-        <a href="index.html"><img src="burger-logo.svg" /></a>
+        <a href="index.html"><img src="burger-logo.svg" alt="logo" aria-label="Go back to welcome page" /></a>
         <span><a class="nav-link" href="#about">ABOUT US</a></span>
         <span><a class="nav-link" href="#menu">MENU</a></span>
         <span><a class="nav-link" href="order.html">ORDER</a></span>
@@ -72,7 +78,8 @@
 
         <div class="caption">
             <span class="border">
-                <a href="order.html" class="order_button hvr-outline-out">ORDER NOW</a></span>
+                <a href="order.html" class="order_button hvr-outline-out" aria-label="Click to order burgers">ORDER
+                    NOW</a></span>
         </div>
     </div>
 
@@ -95,14 +102,16 @@
 
     <div class="bgimg-4">
         <div class="caption">
-            <span class="border">WE ARE HIRING! <a href="contact.html"><b>JOIN US</b></a></span>
+            <span class="border">WE ARE HIRING! <a href="contact.html"
+                    aria-label="Click the link and go to contact page"><b>JOIN US</b></a></span>
         </div>
     </div>
     <div class="copyright">
         <p>Davie's Burger | All right reserved.</p>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="script.js"></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://use.fontawesome.com/a24698c221.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
