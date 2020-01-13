@@ -5,48 +5,39 @@
   <title>Davie's burger | Order</title>
 
   <!-- Meta -->
-  <meta charset="utf-8">
-  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=no">
+  <meta charset="UTF-8">
+  <meta name="description" content="Davie's Burgers">
+  <meta name="keywords" content="davie burger, davie's burgers, burgers">
+  <meta name="author" content="Cuk Danijela">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-  <script src="https://use.fontawesome.com/a24698c221.js"></script>
+  <script src="js/font-awesome.js"></script>
 </head>
 
 <body>
-  <!-- Site Wide Header -->
-  <header role="banner" aria-label="site-wide-navigation" class="site-header">
-    <div class="container">
-
-    </div>
-  </header>
-  <!-- Site Main Content -->
   <main role="main" class="site-main">
-    <header aria-labelledby="page-title" class="clearfix site-main-header">
-
-    </header>
     <section role="region" aria-label="contact-form" class="site-main-section">
       <div class="container">
         <div class="card contact-form-container">
+          <a href="index.html"><img id="logo" src="burger-logo.svg" alt="logo"
+              aria-label="Go back to welcome page" /></a>
           <div class="clearfix">
-
             <form action="submission.html" method="POST">
               <h1>Create a burger!</h1>
               <section class="protein">
                 <label for="patty">What type of protein would you like?</label>
                 <input type="text" name="patty" id="patty">
               </section>
-              <hr>
 
               <section class="patties">
                 <label for="amount">How many patties would you like?</label>
                 <input type="number" name="amount" id="amount">
               </section>
-              <hr>
 
               <section class="cooked">
                 <label for="doneness">How do you want your patty cooked</label>
@@ -55,7 +46,6 @@
                 <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
                 <span>Well-Done</span>
               </section>
-              <hr>
 
               <section class="toppings">
                 <span>What toppings would you like?</span>
@@ -67,7 +57,6 @@
                 <input type="checkbox" name="topping" id="onion" value="onion">
                 <label for="onion">Onion</label>
               </section>
-              <hr>
 
               <section class="cheesy">
                 <span>Would you like to add cheese?</span>
@@ -77,7 +66,6 @@
                 <input type="radio" name="cheese" id="no" value="yes">
                 <label for="no">No</label>
               </section>
-              <hr>
 
               <section class="bun-type">
                 <label for="bun">What type of bun would you like?</label>
@@ -87,7 +75,6 @@
                   <option value="pretzel">Pretzel</option>
                 </select>
               </section>
-              <hr>
 
               <section class="sauce-selection">
                 <label for="sauce">What type of sauce would you like?</label>
@@ -98,16 +85,14 @@
                   <option value="mustard"></option>
                 </datalist>
               </section>
-              <hr>
               <section class="extra-info">
                 <label for="extra">Anything else you want to add?</label>
                 <br>
                 <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
               </section>
-              <hr>
 
               <section class="submission">
-                <a href="submision.html"><input type="button" value="Submit"></a>
+                <a href="submision.html"><input type="button" value="Submit" class="button button-primary"></a>
               </section>
             </form>
           </div>
@@ -116,14 +101,6 @@
     </section>
     <div class="site-main-background" arai-hidden="true"></div>
   </main>
-  <!-- Site Wide Footer -->
-  <footer role="contentinfo" class="footer">
-    <div class="container">
-      <nav role="navigation" class="clearfix">
-
-      </nav>
-    </div>
-  </footer>
 </body>
 
 </html>
