@@ -159,7 +159,7 @@ small {
 /* 3. Structure Styles
 ======================================== */
 .container {
-  margin: 0 auto;
+  margin: 35px auto;
   max-width: 1160px;
   padding: 0 15px;
 }
@@ -440,7 +440,7 @@ header.sticky {
 
 /* ========= Order section ================== */
 form {
-  text-align: center;
+  text-align: left;
   line-height: 30px;
   height: 80%;
   overflow: auto;
@@ -470,6 +470,8 @@ h1 {
   height: 100px;
   display: block;
   margin: auto;
+  width: 30%;
+  padding-bottom: 20px;
 }
 
 
@@ -497,10 +499,6 @@ h1 {
 ======================================== */
 
 /* Site Navigation */
-.site-header {
-  background-color: #34474F;
-  padding: 30px 15px 0;
-}
 
 .site-header-nav {
   align-items: center;
@@ -649,7 +647,7 @@ h1 {
 }
 
 .button-primary {
-  background-color: #00CF63;
+  background-color: #0898a8;
 }
 
 .button-secondary {
@@ -696,7 +694,7 @@ a.order_button:active {
   background-color: #FFFFFF;
   border-radius: 10px;
   box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.1);
-  padding: 30px 30px 15px;
+  padding: 0px 30px 15px;
 }
 
 .chip {
@@ -770,7 +768,7 @@ textarea {
 }
 
 .site-main-background {
-  background-color: #34474F;
+  background-color: #fff;
   height: 600px;
   display: block;
   position: absolute;
@@ -794,6 +792,10 @@ textarea {
   font-size: 23px;
   line-height: 33px;
   margin-bottom: 15px;
+}
+
+.location-details {
+  text-align: left;
 }
 
 .location-details li {
