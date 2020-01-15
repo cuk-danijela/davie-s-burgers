@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Davie's burger | Order</title>
+  <title>Davie's burgers | Order </title>
 
   <!-- Meta -->
   <meta charset="UTF-8">
@@ -10,13 +10,13 @@
   <meta name="keywords" content="davie burger, davie's burgers, burgers">
   <meta name="author" content="Cuk Danijela">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/reset.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <script src="js/font-awesome.js"></script>
+
 </head>
 
 <body>
@@ -28,74 +28,77 @@
               aria-label="Go back to welcome page" /></a>
           <div class="clearfix">
             <form action="submission.html" method="POST">
-              <h1>Create a burger!</h1>
-              <section class="protein">
-                <label for="patty">What type of protein would you like?</label>
-                <input type="text" name="patty" id="patty">
-              </section>
+              <h2 class="section-header">Create a burger!</h2>
+              <div class="col-1-2">
+                <section class="protein">
+                  <label for="patty">What type of protein would you like?</label>
+                  <input type="text" name="patty" id="patty">
+                </section>
 
-              <section class="patties">
-                <label for="amount">How many patties would you like?</label>
-                <input type="number" name="amount" id="amount">
-              </section>
+                <section class="patties">
+                  <label for="amount">How many patties would you like?</label>
+                  <input type="number" name="amount" id="amount">
+                </section>
 
-              <section class="cooked">
-                <label for="doneness">How do you want your patty cooked</label>
-                <br>
-                <span>Rare</span>
-                <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
-                <span>Well-Done</span>
-              </section>
+                <section class="cooked">
+                  <label for="doneness">How do you want your patty cooked</label>
+                  <br>
+                  <span>Rare</span>
+                  <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+                  <span>Well-Done</span>
+                </section>
+              </div>
+              <div class="col-1-2">
+                <section class="toppings">
+                  <label for="lettuce">What toppings would you like?</label>
+                  <input type="checkbox" name="topping" id="lettuce" value="lettuce">
+                  <label for="lettuce" class="lettuce">Lettuce</label>
+                  <input type="checkbox" name="topping" id="tomato" value="tomato">
+                  <label for="tomato" class="tomato">Tomato</label>
+                  <input type="checkbox" name="topping" id="onion" value="onion">
+                  <label for="onion" class="onion">Onion</label>
+                </section>
 
-              <section class="toppings">
-                <span>What toppings would you like?</span>
-                <br>
-                <input type="checkbox" name="topping" id="lettuce" value="lettuce">
-                <label for="lettuce">Lettuce</label>
-                <input type="checkbox" name="topping" id="tomato" value="tomato">
-                <label for="tomato">Tomato</label>
-                <input type="checkbox" name="topping" id="onion" value="onion">
-                <label for="onion">Onion</label>
-              </section>
+                <section class="cheesy">
+                  <label for="yes">Would you like to add cheese?</label>
+                  <input type="radio" name="cheese" id="yes" value="yes">
+                  <label for="yes" class="yes">Yes</label>
+                  <input type="radio" name="cheese" id="no" value="yes">
+                  <label for="no" class="no">No</label>
+                </section>
 
-              <section class="cheesy">
-                <span>Would you like to add cheese?</span>
-                <br>
-                <input type="radio" name="cheese" id="yes" value="yes">
-                <label for="yes">Yes</label>
-                <input type="radio" name="cheese" id="no" value="yes">
-                <label for="no">No</label>
-              </section>
+                <section class="bun-type">
+                  <label for="bun">What type of bun would you like?</label>
+                  <select name="bun" id="bun">
+                    <option value="sesame">Sesame</option>
+                    <option value="potatoe">Potato</option>
+                    <option value="pretzel">Pretzel</option>
+                  </select>
+                </section>
 
-              <section class="bun-type">
-                <label for="bun">What type of bun would you like?</label>
-                <select name="bun" id="bun">
-                  <option value="sesame">Sesame</option>
-                  <option value="potatoe">Potato</option>
-                  <option value="pretzel">Pretzel</option>
-                </select>
-              </section>
-
-              <section class="sauce-selection">
-                <label for="sauce">What type of sauce would you like?</label>
-                <input list="sauces" id="sauce" name="sauce">
-                <datalist id="sauces">
-                  <option value="ketchup"></option>
-                  <option value="mayo"></option>
-                  <option value="mustard"></option>
-                </datalist>
-              </section>
-              <section class="extra-info">
-                <label for="extra">Anything else you want to add?</label>
-                <br>
-                <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
-              </section>
-
-              <section class="submission">
-                <a href="submision.html"><input type="button" value="Submit" class="button button-primary"></a>
-              </section>
-            </form>
+                <section class="sauce-selection">
+                  <label for="sauce">What type of sauce would you like?</label>
+                  <input list="sauces" id="sauce" name="sauce">
+                  <datalist id="sauces">
+                    <option value="ketchup"></option>
+                    <option value="mayo"></option>
+                    <option value="mustard"></option>
+                  </datalist>
+                </section>
+              </div>
           </div>
+          <section class="extra-info">
+            <label for="extra">Anything else you want to add?</label>
+            <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+          </section>
+
+          <section class="submission text-center">
+            <a href="submision.html">
+              <button type="button" value="Submit Order" class="button button-primary">Submit Order</button>
+            </a>
+          </section>
+          </form>
+
         </div>
       </div>
     </section>

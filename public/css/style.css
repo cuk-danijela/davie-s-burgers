@@ -441,7 +441,7 @@ form {
   text-align: left;
   line-height: 30px;
   height: 80%;
-  overflow: auto;
+  overflow: hidden;
 }
 
 form hr {
@@ -458,20 +458,33 @@ h1 {
 
 #overlay {
   width: 80%;
-  margin: 3% auto;
-  height: 95vh;
+  margin: 0 auto;
+  height: 100vh;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 40px;
 }
 
 #logo {
   height: 100px;
-  display: block;
+  display: inline-block;
   margin: auto;
   width: 30%;
   padding-bottom: 20px;
 }
+#yes,
+#no,
+#lettuce, 
+#tomato,
+#onion {
+  width: auto;
+}
+.yes, .no, .lettuce, .tomato, .onion {
+display: inline;
+}
 
+input#doneness {
+  width: 300px;
+}
 
 .toppings label,
 .cheesy label {
@@ -492,6 +505,7 @@ h1 {
 .text-center {
   text-align: center;
 }
+
 
 /* 4. Modules Styles
 ======================================== */
@@ -646,6 +660,7 @@ h1 {
 
 .button-primary {
   background-color: #0898a8;
+  cursor: pointer;
 }
 
 .button-secondary {
