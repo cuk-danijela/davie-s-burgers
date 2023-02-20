@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:100,500,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:100,500,700&display=swap");
 
 /* 1. Global Styles
 ======================================== */
@@ -24,7 +24,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-
 body,
 html {
   text-align: center;
@@ -35,7 +34,6 @@ html {
   color: #777;
 }
 
-
 /* 2. Typography Styles
 ======================================== */
 h1,
@@ -45,7 +43,7 @@ h4,
 h5,
 h6 {
   color: #414546;
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
   font-weight: 700;
   transition: font-size 0.25s ease;
 }
@@ -70,7 +68,7 @@ h4 {
   font-size: calc(23px / 1.5);
 }
 
-@media(min-width: 720px) {
+@media (min-width: 720px) {
   h1 {
     font-size: calc(64px / 1.25);
   }
@@ -88,7 +86,7 @@ h4 {
   }
 }
 
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   h1 {
     font-size: 64px;
   }
@@ -106,9 +104,13 @@ h4 {
   }
 }
 
+.bgimg-2-div p {
+  color: #ffffff;
+}
+
 p {
-  color: #414546;
-  font-family: 'Roboto', serif;
+  color: #161717;
+  font-family: "Roboto", serif;
   font-size: 16px;
   line-height: 30px;
   margin: 0 0 15px;
@@ -117,8 +119,8 @@ p {
 }
 
 a {
-  color: #42A5F5;
-  font-family: 'Roboto', Helvetica, sans-serif;
+  color: #6fbcc8;
+  font-family: "Roboto", Helvetica, sans-serif;
   font-size: 16px;
   line-height: 23px;
   text-decoration: none;
@@ -126,7 +128,7 @@ a {
 
 li {
   color: #414546;
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
   font-size: 16px;
   line-height: 23px;
   list-style: none;
@@ -135,7 +137,7 @@ li {
 label {
   color: #414546;
   display: block;
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 18px;
@@ -166,15 +168,15 @@ small {
 
 .divider {
   border: none;
-  border-bottom: 1px solid #F2F3F5;
+  border-bottom: 1px solid #f2f3f5;
   clear: both;
   width: 100%;
 }
 
-@media(min-width: 720px) {
+@media (min-width: 720px) {
   .col-1-2 {
     float: left;
-    width: calc(97.5%/2);
+    width: calc(97.5% / 2);
   }
 
   .col-1-2:not(:last-child) {
@@ -183,7 +185,7 @@ small {
 
   .col-1-3 {
     float: left;
-    width: calc(95%/3);
+    width: calc(95% / 3);
   }
 
   .col-1-3:not(:last-child) {
@@ -192,7 +194,7 @@ small {
 
   .col-1-4 {
     float: left;
-    width: calc(92.5%/4);
+    width: calc(92.5% / 4);
   }
 
   .col-1-4:not(:last-child) {
@@ -204,11 +206,11 @@ small {
 
 nav {
   text-align: center;
-  background-color: whitesmoke;
+  display: inline-flex;
+  align-items: center;
 }
 
 nav img {
-  display: block;
   width: 180px;
   margin: 0 auto;
 }
@@ -218,20 +220,17 @@ nav span {
   font-size: 16px;
   font-weight: 100;
   letter-spacing: 2px;
-  margin: 10px 0;
+  margin: 0 20px;
 }
 
-nav span:last-child {
-  margin-bottom: 0;
-  padding-bottom: 10px;
-}
 
 nav a {
   color: #666666;
 }
 
 .nav-link:hover {
-  font-weight: bolder;
+  color: #2098aa;
+  border-bottom: 1px solid blanchedalmond;
 }
 
 /* Content Container */
@@ -264,13 +263,12 @@ header.sticky {
   background-position: center;
   background-size: cover;
   height: 320px;
-
 }
 
 .header h1 {
-  background-color: #05A8AA;
-  color: #FFF;
-  font-family: 'Oswald', sans-serif;
+  background-color: #05a8aa;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
   font-size: 40px;
   font-weight: 300;
   line-height: 40px;
@@ -294,6 +292,10 @@ header.sticky {
   margin-top: 18px;
 }
 
+.clearfix_p{
+  text-align: center;
+  margin-bottom: 30px;
+}
 /* Icon 1 */
 
 #nav-icon1,
@@ -308,10 +310,10 @@ header.sticky {
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
@@ -330,10 +332,10 @@ header.sticky {
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 #nav-icon1 span:nth-child(1) {
@@ -369,7 +371,6 @@ header.sticky {
   transform: rotate(-135deg);
 }
 
-
 .bgimg-1,
 .bgimg-2,
 .bgimg-3,
@@ -380,7 +381,6 @@ header.sticky {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .bgimg-1 {
@@ -402,7 +402,7 @@ header.sticky {
 
 .bgimg-2-div {
   color: #ddd;
-  background-color: #282E34;
+  background-color: #282e34;
   text-align: center;
   padding: 50px 80px;
 }
@@ -410,8 +410,15 @@ header.sticky {
 .bgimg-3 {
   background-image: url("../images/burger_03.jpg");
   min-height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.bgimg-3 p{
+    text-align: center;
+  color: white;
+}
 .bgimg-4 {
   background-image: url("../images/burger_04.jpg");
   min-height: 450px;
@@ -426,14 +433,16 @@ header.sticky {
   color: #000;
 }
 
-.caption span.border {
+.caption .border {
   background-color: #111;
   color: #fff;
   padding: 18px;
   font-size: 25px;
   letter-spacing: 10px;
 }
-
+.caption .border b:hover {
+  border-bottom: 1px solid #6fbcc8;
+}
 .text-center {
   text-align: center;
 }
@@ -475,13 +484,17 @@ h1 {
 }
 #yes,
 #no,
-#lettuce, 
+#lettuce,
 #tomato,
 #onion {
   width: auto;
 }
-.yes, .no, .lettuce, .tomato, .onion {
-display: inline;
+.yes,
+.no,
+.lettuce,
+.tomato,
+.onion {
+  display: inline;
 }
 
 input#doneness {
@@ -492,7 +505,6 @@ input#doneness {
 .cheesy label {
   margin-right: 25px;
 }
-
 
 .clearfix::after {
   content: " ";
@@ -507,7 +519,6 @@ input#doneness {
 .text-center {
   text-align: center;
 }
-
 
 /* 4. Modules Styles
 ======================================== */
@@ -552,12 +563,12 @@ input#doneness {
 }
 
 .site-nav-link {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .site-nav-link-active {
-  color: #FF6600;
+  color: #ff6600;
   text-decoration: none;
 }
 
@@ -570,7 +581,7 @@ input#doneness {
   margin-bottom: 15px;
 }
 
-@media(min-width: 720px) {
+@media (min-width: 720px) {
   .footer-section {
     margin-bottom: 0;
   }
@@ -601,7 +612,7 @@ input#doneness {
   width: 27.5% !important;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .footer-email-input {
     width: 57% !important;
   }
@@ -626,7 +637,7 @@ input#doneness {
 }
 
 .alert-error {
-  background-color: #FC472E;
+  background-color: #fc472e;
 }
 
 .alert img {
@@ -637,16 +648,16 @@ input#doneness {
 }
 
 .alert p {
-  color: #FFFFFF;
+  color: #ffffff;
   display: inline-block;
   margin-bottom: 0;
 }
 
 .button {
   border-radius: 3px;
-  color: #FFFFFF;
+  color: #ffffff;
   display: inline-block;
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: normal;
@@ -656,17 +667,13 @@ input#doneness {
   transition: opacity 0.5s ease;
 }
 
-.button:hover {
-  opacity: 0.75;
-}
-
 .button-primary {
   background-color: #0898a8;
   cursor: pointer;
 }
 
 .button-secondary {
-  background-color: #FFAA00;
+  background-color: #ffaa00;
 }
 
 .button-full {
@@ -678,27 +685,33 @@ input#doneness {
   padding: 10px 30px;
 }
 
-a.order_button {
+.order_button {
+  box-shadow: inset 0px 1px 0px 0px #dcecfb;
+  background: linear-gradient(to bottom, #bddbfa 5%, #008a8a 100%);
+  background-color: #bddbfa;
+  border-radius: 6px;
+  border: 1px solid #84bbf3;
   display: inline-block;
-  padding: 0.7em 1.7em;
-  margin: 0 0.3em 0.3em 0;
-  border-radius: 0.2em;
-  box-sizing: border-box;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  color: #FFFFFF;
-  background-color: #0798a8;
-  box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17), inset 0 0.6em 2em -0.3em rgba(255, 255, 255, 0.15), inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
-  text-align: center;
+  text-shadow: 0px 1px 0px #528ecc;
+}
+
+.order_button:hover {
+  background: linear-gradient(to bottom, #008a8a 5%, #bddbfa 100%);
+  background-color: #008a8a;
+}
+.order_button:active {
   position: relative;
+  top: 1px;
 }
 
-a.order_button:active {
-  box-shadow: inset 0 0.6em 2em -0.3em rgba(0, 0, 0, 0.15), inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
-}
-
-@media all and (max-width:30em) {
+@media all and (max-width: 30em) {
   a.order_button {
     display: block;
     margin: 0.4em auto;
@@ -706,7 +719,7 @@ a.order_button:active {
 }
 
 .card {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.1);
   padding: 0px 30px 15px;
@@ -735,18 +748,17 @@ a.order_button:active {
 }
 
 .chip-content-description {
-  color: #8F9196;
+  color: #8f9196;
   margin-bottom: 0;
 }
 
 input,
 select,
 textarea {
-  background-color: #FFFFFF;
-  border: 1px solid #F2F3F5;
+  background-color: #ffffff;
+  border: 1px solid #f2f3f5;
   border-radius: 3px;
-  box-shadow: inset 1px 1px 3px 0 rgba(189, 191, 192, 0.10);
-  height: 35px;
+  box-shadow: inset 1px 1px 3px 0 rgba(189, 191, 192, 0.1);
   margin-bottom: 15px;
   padding: 10px;
   transition: border-color 0.5s ease;
@@ -763,7 +775,7 @@ input:active,
 input:focus,
 textarea:active,
 textarea:focus {
-  border: 1px solid #42A5F5;
+  border: 1px solid #42a5f5;
   outline: none;
 }
 
@@ -772,7 +784,7 @@ textarea {
 }
 
 .input-error {
-  border-color: #FC472E;
+  border-color: #fc472e;
 }
 
 /* 6. Page Styles
@@ -800,7 +812,7 @@ textarea {
 
 .site-main-header h1,
 .site-main-header p {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .section-header {
@@ -820,7 +832,6 @@ textarea {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
